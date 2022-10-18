@@ -19,7 +19,7 @@ const Header = () => {
 				</p>
 				<p className="py-3 mr-3 text-white text-lg underline underline-offset-8 hover:text-purple-900">
 					{" "}
-					<Link to="/bogs"> Blogs </Link>{" "}
+					<Link to="/blogs"> Blogs </Link>{" "}
 				</p>
 				<p className="py-3 mr-3 text-white text-lg underline underline-offset-8 hover:text-purple-900">
 					{" "}
