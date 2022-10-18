@@ -12,15 +12,15 @@ const SingleReview = ({ review }) => {
 				<StarIcon className="w-6 text-gray-300"></StarIcon>
 			</div>
 			<div className="text-left flex">
-				{rating}<StarIcon className="w-6 text-cyan-800"></StarIcon>
-				<p className="ml-1">Ratings </p>
+				<p>Rating: {rating}</p>
+				<StarIcon className="w-6 text-cyan-800"></StarIcon>
 			</div>
 			<div className=" flex items-center">
 				<img className="w-12 rounded-full" src={picture} alt="" />
 				<h4 className="ml-4 text-xl">{name}</h4>
 			</div>
 
-			<div className="text-left">
+			<div className="text-left mt-1">
 				<p> {comment}</p>
 			</div>
 		</div>
