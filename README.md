@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Laptop Review App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here live site: [Create React App](https://github.com/facebook/create-react-app).
+
+* This is a laptop review web application.
+* All catagory of Laptops will be reviewed here.
+* You can find reviews from people who ha experience.
+* Find some blogs in the blog section.
+
 
 ## Available Scripts
 
