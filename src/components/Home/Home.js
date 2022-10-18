@@ -1,9 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import useComments from "../../hooks/CustomHooks";
 import SingleReview from "../SingleReview/SingleReview";
 
 const Home = () => {
 	const [comments] = useComments();
+	const navigate = useNavigate();
+	const seeAllReviews = () => {
+		navigate('/reviews');
+	};
 	return (
 		<div>
 			<div>
@@ -32,12 +37,12 @@ const Home = () => {
 			</div>
 
 			<div>
-				<h1 className="text-3xl underline underline-offset-8">Customar Reviews</h1>
+				<h1 className="text-3xl underline underline-offset-8">Customar Reviews(<span className="text-emerald-900">3</span>)</h1>
 				{comments.slice(0, 3).map((review) => (
 					<SingleReview review={review} key={review.id}></SingleReview>
 				))}
 				<div className="w-44 py-1 mx-auto mb-8 text-xl text-white bg-emerald-900 rounded-md">
-					<button>See All Reviews</button>
+					<button onClick={seeAllReviews}>See All Reviews</button>
 				</div>
 
 			</div>
