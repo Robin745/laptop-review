@@ -1,6 +1,6 @@
 # Laptop Review App
 
-Here live site: [Create React App](https://laptop-review-blog.netlify.app/).
+Here live site: [laptop-review](https://laptop-review-blog.netlify.app/).
 
 * This is a laptop review web application.
 * All catagory of Laptops will be reviewed here.
