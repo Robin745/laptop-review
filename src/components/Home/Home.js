@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import useComments from "../../hooks/CustomHooks";
+import { useComments } from "../../hooks/CustomHooks";
 import SingleReview from "../SingleReview/SingleReview";
 
 const Home = () => {

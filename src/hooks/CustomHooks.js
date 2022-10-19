@@ -11,4 +11,14 @@ const useComments = () => {
 
 	return [comments];
 };
-export default useComments;
+const useData = () => {
+	const [graphData, setData] = useState([]);
+	useEffect(() => {
+		fetch("graphData.json")
+			.then((res) => res.json())
+			.then((data) => setData(data));
+	}, []);
+
+	return [graphData];
+};
+export { useData, useComments };
